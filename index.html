@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <title>LOGIN</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.css">
+</head>
+<body> 
+<section id="f-section">
+    <div class="section-transparent">
+    <nav >
+        <h1><a href="index.html">Logo<span>lio</span> </a></h1>
+        <ul id="navLinks">
+            <i class="fa-solid fa-x"onclick="hidenMenu()"></i>
+
+            <li> <a href="about me.html"> About Me </a> </li>
+            <li> <a href="services.html"> Services </a> </li>
+            <li> <a href="contact me.html"> Contact Me </a> </li>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hidenMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+    <div class="content">
+        <h4> Hi, I'm</h4>
+        <h1> Abdullah <span>Ahmed </span>Abudan</h1>
+        <h3> I'm A web developer</h3>
+        <div class="container-form">
+        <form action="">
+            <input type="email" name="Email" placeholder="Enter Your Email">
+            <button type="submit"> Lets Start</button>
+        </form>      
+        </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
